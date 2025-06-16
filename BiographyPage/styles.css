@@ -10,14 +10,15 @@ body {
 }
 
 h1 {
-  color: hotpink;
+  color: hotpink; /* changed the color to hotpink */ 
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 10px dotted purple;
+  border-bottom: 10px dotted purple; /* changed the border to dotted purple */ 
 }
 
 h2 {
   font-size: 1.5em;
+  font-style: italic; /* changed the font style to italic */
 }
 
 .job-title {

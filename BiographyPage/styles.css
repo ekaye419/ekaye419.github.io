@@ -33,6 +33,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  color: green; /* changed the hover color to a green */ 
 }
 .contact-information {
   background-color: #eeeeee; /* changed the background color to light gray */

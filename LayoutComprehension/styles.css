@@ -1,0 +1,89 @@
+/* Base styling */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.4 Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Logo */
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* Navigation */
+nav {
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 980px;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+}
+
+/* Main layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  gap: 20px;
+}
+
+article {
+  flex: 2 1 60%;
+}
+
+aside {
+  flex: 1 1 35%;
+}
+
+/* Image inside article: text wrap */
+.feature {
+  float: left;
+  width: 200px;
+  margin: 0 20px 20px 0;
+}
+
+/* Photo gallery grid */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+.photos li {
+  margin: 0;
+  padding: 0;
+}

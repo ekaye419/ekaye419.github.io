@@ -43,3 +43,117 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Regular.woff2');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('fonts/RobotoSlab-Regular.woff2') format('woff2'); 
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  color: #333;
+}
+h1, h2, h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1px;  
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+section h2 + p {
+  text-indent: 20px;
+}
+a {
+  color: #a66;
+  text-decoration: underline;
+  outline: none;
+}
+a:visited {
+  color: #844;
+}
+a:hover, 
+a:focus {
+  color: #822;
+  text-decoration: none;
+}
+a:active {
+  background-color: #f2dede;
+  color: #000;
+  font-weight: bold;
+}
+a[href^="http://"] {/* Add an icon for internal links */
+  position: none;
+}
+a[href^="https://"]::after {
+  /* Add an icon for external links */
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('external-link-52.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+}
+a.content-term::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('external-link-52.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  margin-left: 3px;
+}
+ul, ol {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+li {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+ul li {
+  list-style-type: square;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  margin-bottom: 10px;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  text-align: center
+  color: #a66;
+  border: 2px solid #a66;
+  background-color: white;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus {
+  background-color: #f4dada;
+  color: #600;
+}
+nav a:active {
+  background-color: #a66;
+  color: white;
+}

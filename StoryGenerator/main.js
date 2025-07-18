@@ -1,3 +1,9 @@
+/*
+	Name: Your Name
+	File: index.html
+	Date:  17JUL2025
+	This is the main javascript file for the story generator.
+	*/
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
